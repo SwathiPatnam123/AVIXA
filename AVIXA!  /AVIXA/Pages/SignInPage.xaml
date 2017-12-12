@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:local="clr-namespace:AVIXA;assembly=AVIXA" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AVIXA.SignInPage">
+    <RelativeLayout VerticalOptions="FillAndExpand">
+        <StackLayout RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1.0}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height,Factor=1.0}" Spacing="0" VerticalOptions="FillAndExpand">
+            <StackLayout HorizontalOptions="Center" Padding="70,40,70,40">
+                <Image IsEnabled="true" Source="LandingLogo" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout Spacing="20" Padding="15,30,15,15" Orientation="Vertical" BackgroundColor="#EAA34B" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Frame BackgroundColor = "Transparent" Padding = "5" HorizontalOptions = "FillAndExpand" HasShadow = "false" OutlineColor = "White" CornerRadius = "0">
+                   <local:CustomEntry x:Name ="userNameRef" BackgroundColor = "Transparent" TextColor ="White" PlaceholderColor="White"  Placeholder="  Enter Username/Email id" HorizontalOptions="FillAndExpand" />
+                </Frame>
+                <Frame BackgroundColor = "Transparent" Padding = "5" HorizontalOptions = "FillAndExpand" HasShadow = "false" OutlineColor = "White" CornerRadius = "0">
+                <local:CustomEntry x:Name = "passwordRef" BackgroundColor = "Transparent" TextColor ="White" PlaceholderColor="White" Placeholder="  Enter Password" HorizontalOptions="FillAndExpand" />
+                </Frame>
+                <StackLayout Spacing="40" Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <StackLayout Spacing="5" Orientation="Vertical" HorizontalOptions="StartAndExpand">
+                        <Frame BackgroundColor = "White" Padding = "0" HorizontalOptions = "FillAndExpand" HasShadow = "false" OutlineColor = "White" CornerRadius = "0">
+                        <Button x:Name ="signInRef" Text="SIGN IN" HeightRequest ="25" FontAttributes="Bold" TextColor="Black" WidthRequest="150" HorizontalOptions="StartAndExpand"/>
+                         </Frame>
+                        <Label FontSize="15" TextColor="White" FontAttributes="Bold" Text="Forgot Password?" HorizontalOptions="StartAndExpand" />
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Image BackgroundColor="Red" HeightRequest="40" WidthRequest="40" HorizontalOptions="StartAndExpand" />
+                    </StackLayout>
+                </StackLayout>
+                <!--<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Image HorizontalOptions="StartAndExpand" BackgroundColor="White" WidthRequest="100" HeightRequest="30"/>
+                    <Label Text="Or Login With" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                    <Image HorizontalOptions="StartAndExpand" BackgroundColor="White" WidthRequest="100" HeightRequest="30"/>
+                </StackLayout>-->
+                <Frame BackgroundColor="Black" Margin="0,20,0,0" Padding = "0" HorizontalOptions = "Center" HasShadow = "false" OutlineColor = "Transparent" CornerRadius = "0">
+                <local:CustonButton  Text="Create an Account" HeightRequest ="30" FontAttributes="Bold" TextColor="White" BackgroundColor="Black" WidthRequest="185" HorizontalOptions="CenterAndExpand" />
+                </Frame>
+            </StackLayout>
+            <StackLayout BackgroundColor="Red" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="End">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                        <StackLayout Padding="10,7,5,7" Spacing="3">
+                            <Image Margin="0,3,0,0" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" Source="profile" />
+                            <Label TextColor="White" Text="Profile" FontSize="12" />
+                        </StackLayout>
+                        <BoxView WidthRequest="1" BackgroundColor="Black" HorizontalOptions="Start" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                        <StackLayout Padding="10,7,5,7" Spacing="3">
+                            <Image Margin="0,3,0,0" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" Source="deals" />
+                            <Label TextColor="White" Text="Deals" FontSize="12" />
+                        </StackLayout>
+                        <BoxView WidthRequest="1" BackgroundColor="Black" HorizontalOptions="Start" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                        <StackLayout Padding="10,7,5,7" Spacing="3">
+                            <Image Margin="0,3,0,0" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" Source="Events" />
+                            <Label TextColor="White" Text="Events" FontSize="12" />
+                        </StackLayout>
+                        <BoxView WidthRequest="1" BackgroundColor="Black" HorizontalOptions="Start" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                        <StackLayout Padding="10,7,5,7" Spacing="3">
+                            <Image Margin="0,3,0,0" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" Source="info" />
+                            <Label TextColor="White" Text=" Info " FontSize="12" />
+                        </StackLayout>
+                        <BoxView WidthRequest="1" BackgroundColor="Black" HorizontalOptions="Start" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                        <StackLayout Padding="10,7,5,7" Spacing="3">
+                            <Image Margin="0,3,0,0" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" Source="Contact" />
+                            <Label TextColor="White" Text="Contact" FontSize="12" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        <!-- Starting of Activity Indicator Layout -->
+            <StackLayout BackgroundColor="#90000000" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  x:Name="activityIndicatorLayout" IsVisible="false"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1.0}" 
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height,Factor=1.0}">
+                <ActivityIndicator Color="White" IsVisible="true" IsRunning="true" HorizontalOptions="Center" VerticalOptions="FillAndExpand" x:Name="actIndicator" />
+            </StackLayout>
+            <!-- Ending of Activity Indicator Layout -->
+    </RelativeLayout>
+</ContentPage>

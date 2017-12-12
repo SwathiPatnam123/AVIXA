@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{494D5A3B-F73F-4F1C-B0BE-69E12F21F558}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AVIXA/Pages/ProfilePage.xaml.cs">
+    <Files>
+      <File FileName="AVIXA/packages.config" Line="4" Column="27" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="AVIXA/Pages/SignInPage.xaml" Line="82" Column="15" />
+      <File FileName="AVIXA/WebAPIs/LoginWebAPI.cs" Line="4" Column="1" />
+      <File FileName="iOS/CustomEntry_iOS.cs" Line="1" Column="1" />
+      <File FileName="iOS/Info.plist" />
+      <File FileName="AVIXA/Pages/ProfilePage.xaml" Line="18" Column="37" />
+      <File FileName="AVIXA/Pages/ProfilePage.xaml.cs" Line="50" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/swathipatnam/Desktop/AVIXA!  /AVIXA/Pages/ProfilePage.xaml.cs" relfile="AVIXA/Pages/ProfilePage.xaml.cs" line="50" column="88" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AVIXA.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5E7C6974-E350-40D7-A29D-B63594DC341C" automaticSigning="False" />
+  <MultiItemStartupConfigurations />
+</Properties>

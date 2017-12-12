@@ -1,0 +1,31 @@
+Function=xamarin_get_block_descriptor
+	/Users/swathipatnam/Downloads/AVIXA!  2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.0.1/mtouch-cache/Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/swathipatnam/Downloads/AVIXA!  2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.0.1/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr
+	/Users/swathipatnam/Downloads/AVIXA!  2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.0.1/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr
+	/Users/swathipatnam/Downloads/AVIXA!  2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.0.1/mtouch-cache/Link/Xamarin.iOS.dll
+Function=CreateZStream
+	/Users/swathipatnam/Downloads/AVIXA!  2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.0.1/mtouch-cache/Link/System.dll
+Function=CloseZStream
+	/Users/swathipatnam/Downloads/AVIXA!  2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.0.1/mtouch-cache/Link/System.dll
+Function=Flush
+	/Users/swathipatnam/Downloads/AVIXA!  2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.0.1/mtouch-cache/Link/System.dll
+Function=ReadZStream
+	/Users/swathipatnam/Downloads/AVIXA!  2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.0.1/mtouch-cache/Link/System.dll
+Function=WriteZStream
+	/Users/swathipatnam/Downloads/AVIXA!  2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.0.1/mtouch-cache/Link/System.dll
+Function=xamarin_start_wwan
+	/Users/swathipatnam/Downloads/AVIXA!  2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.0.1/mtouch-cache/Link/System.dll
+Function=xamarin_timezone_get_data
+	/Users/swathipatnam/Downloads/AVIXA!  2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.0.1/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/swathipatnam/Downloads/AVIXA!  2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.0.1/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_log
+	/Users/swathipatnam/Downloads/AVIXA!  2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.0.1/mtouch-cache/Link/mscorlib.dll
+Function=mono_pmip
+Function=xamarin_dyn_objc_msgSend
+Function=xamarin_dyn_objc_msgSendSuper
+Function=xamarin_dyn_objc_msgSend_stret
+Function=xamarin_dyn_objc_msgSendSuper_stret

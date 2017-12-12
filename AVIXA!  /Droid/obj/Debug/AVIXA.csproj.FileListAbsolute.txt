@@ -1,0 +1,7 @@
+/Users/swathipatnam/Desktop/AVIXA!  /Droid/obj/Debug/AVIXA.csprojResolveAssemblyReference.cache
+/Users/swathipatnam/Desktop/AVIXA!  /Droid/obj/Debug/AVIXA.csproj.CoreCompileInputs.cache
+/Users/swathipatnam/Desktop/AVIXA!  /Droid/obj/Debug/AVIXA.App.xaml.g.cs
+/Users/swathipatnam/Desktop/AVIXA!  /Droid/obj/Debug/AVIXA.AVIXAPage.xaml.g.cs
+/Users/swathipatnam/Desktop/AVIXA!  /Droid/obj/Debug/AVIXA.AVIXALandingPage.xaml.g.cs
+/Users/swathipatnam/Desktop/AVIXA!  /Droid/obj/Debug/AVIXA.SignInPage.xaml.g.cs
+/Users/swathipatnam/Desktop/AVIXA!  /Droid/obj/Debug/AVIXA.ProfilePage.xaml.g.cs

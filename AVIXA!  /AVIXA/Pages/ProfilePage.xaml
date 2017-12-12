@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AVIXA.Pages.ProfilePage">
+ <RelativeLayout VerticalOptions="FillAndExpand">
+   <StackLayout RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1.0}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height,Factor=1.0}" Spacing="0" VerticalOptions="FillAndExpand" Padding ="0,20,0,0">
+      <StackLayout Orientation ="Vertical" HorizontalOptions ="FillAndExpand" VerticalOptions ="FillAndExpand" Spacing ="10">
+         <StackLayout HorizontalOptions ="CenterAndExpand" VerticalOptions ="CenterAndExpand" Orientation ="Vertical">
+           <StackLayout Orientation ="Horizontal" HorizontalOptions ="CenterAndExpand" VerticalOptions ="StartAndExpand">
+              <Label Text ="John Doe" FontSize ="16" FontAttributes ="Bold" TextColor ="Red"/>
+           </StackLayout>
+           <BoxView HeightRequest ="1" BackgroundColor ="Silver" HorizontalOptions ="FillAndExpand"/>
+           <StackLayout Orientation ="Horizontal" HorizontalOptions ="CenterAndExpand" VerticalOptions ="StartAndExpand">
+               <Label Text ="Membership Level :" FontSize ="14" TextColor ="Silver" FontAttributes ="Bold"/>
+               <Label Text ="hjbfchjfbv" FontSize ="14" TextColor ="Black" FontAttributes ="Bold"/>
+           </StackLayout>
+                     <StackLayout Orientation ="Horizontal" HorizontalOptions ="CenterAndExpand" VerticalOptions ="StartAndExpand">
+               <Label Text ="Expiration date :" FontSize ="14" TextColor ="Silver" FontAttributes ="Bold"/>
+               <Label Text ="hjbfchj" FontSize ="14" TextColor ="Black" FontAttributes ="Bold"/>
+           </StackLayout>
+         </StackLayout>  
+           <Button BorderRadius ="20" HorizontalOptions ="CenterAndExpand" VerticalOptions ="Start" Text ="  Upgrade your Membership  " TextColor ="White" BackgroundColor ="Black"/>
+    
+
+           <StackLayout x:Name ="BarCodeStackLayoutRef" HorizontalOptions ="FillAndExpand" VerticalOptions ="FillAndExpand">
+           </StackLayout>
+
+         <Button BorderRadius ="2" HorizontalOptions ="CenterAndExpand" VerticalOptions ="Start" BackgroundColor ="Black"/>
+
+        <StackLayout BackgroundColor="Red" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="End">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                        <StackLayout Padding="10,7,5,7" Spacing="3">
+                            <Image Margin="0,3,0,0" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" Source="profile" />
+                            <Label TextColor="White" Text="Profile" FontSize="12" />
+                        </StackLayout>
+                        <BoxView WidthRequest="1" BackgroundColor="Black" HorizontalOptions="Start" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                        <StackLayout Padding="10,7,5,7" Spacing="3">
+                            <Image Margin="0,3,0,0" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" Source="deals" />
+                            <Label TextColor="White" Text="Deals" FontSize="12" />
+                        </StackLayout>
+                        <BoxView WidthRequest="1" BackgroundColor="Black" HorizontalOptions="Start" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                        <StackLayout Padding="10,7,5,7" Spacing="3">
+                            <Image Margin="0,3,0,0" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" Source="Events" />
+                            <Label TextColor="White" Text="Events" FontSize="12" />
+                        </StackLayout>
+                        <BoxView WidthRequest="1" BackgroundColor="Black" HorizontalOptions="Start" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                        <StackLayout Padding="10,7,5,7" Spacing="3">
+                            <Image Margin="0,3,0,0" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" Source="info" />
+                            <Label TextColor="White" Text=" Info " FontSize="12" />
+                        </StackLayout>
+                        <BoxView WidthRequest="1" BackgroundColor="Black" HorizontalOptions="Start" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                        <StackLayout Padding="10,7,5,7" Spacing="3">
+                            <Image Margin="0,3,0,0" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" Source="Contact" />
+                            <Label TextColor="White" Text="Contact" FontSize="12" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+                
+      </StackLayout>
+   </StackLayout>
+        <!-- Starting of Activity Indicator Layout -->
+            <StackLayout BackgroundColor="#90000000" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  x:Name="activityIndicatorLayout" IsVisible="false"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1.0}" 
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height,Factor=1.0}">
+                <ActivityIndicator Color="White" IsVisible="true" IsRunning="true" HorizontalOptions="Center" VerticalOptions="FillAndExpand" x:Name="actIndicator" />
+            </StackLayout>
+        <!-- Ending of Activity Indicator Layout -->
+   </RelativeLayout>
+</ContentPage>

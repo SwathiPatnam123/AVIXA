@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Forms.2.5.0.91635\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.91635\build\netstandard1.0\Xamarin.Forms.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{494D5A3B-F73F-4F1C-B0BE-69E12F21F558}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AVIXA.iOS</RootNamespace>
+    <AssemblyName>AVIXA.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Hector Rodriguez (2AL84RMYTQ)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>63618</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>AvixaDevelopmentProfile</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>13432</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="RestSharp">
+      <HintPath>..\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile.Core">
+      <HintPath>..\packages\ZXing.Net.Mobile.2.3.2\lib\Xamarin.iOS10\ZXing.Net.Mobile.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.portable">
+      <HintPath>..\packages\ZXing.Net.Mobile.2.3.2\lib\Xamarin.iOS10\zxing.portable.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXingNetMobile">
+      <HintPath>..\packages\ZXing.Net.Mobile.2.3.2\lib\Xamarin.iOS10\ZXingNetMobile.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile.Forms">
+      <HintPath>..\packages\ZXing.Net.Mobile.Forms.2.3.2\lib\Xamarin.iOS10\ZXing.Net.Mobile.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile.Forms.iOS">
+      <HintPath>..\packages\ZXing.Net.Mobile.Forms.2.3.2\lib\Xamarin.iOS10\ZXing.Net.Mobile.Forms.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.91635\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.91635\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.91635\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.91635\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AVIXA\AVIXA.csproj">
+      <Project>{B7DCF0CF-9F33-4CF3-B9CC-9961C5749D3B}</Project>
+      <Name>AVIXA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\40X40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\60X60.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\58X58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\87X87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\80X80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120X120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\180X180.png" />
+    <ImageAsset Include="Assets.xcassets\LandingLogo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LandingLogo.imageset\AVIXA-logo.png" />
+    <ImageAsset Include="Assets.xcassets\SignInLogo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\SignInLogo.imageset\signin-icon.png" />
+    <ImageAsset Include="Assets.xcassets\profile.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\deals.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Events.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contact.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contact.imageset\Contact.png" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\info.png" />
+    <ImageAsset Include="Assets.xcassets\deals.imageset\Deals.png" />
+    <ImageAsset Include="Assets.xcassets\profile.imageset\Profile.png" />
+    <ImageAsset Include="Assets.xcassets\Events.imageset\events.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\1242X2208.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\750X1334.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\2208X1242.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\320X480.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\640X960.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\640X1136.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Assets.xcassets\LandingLogo.imageset\" />
+    <Folder Include="Assets.xcassets\SignInLogo.imageset\" />
+    <Folder Include="Assets.xcassets\profile.imageset\" />
+    <Folder Include="Assets.xcassets\deals.imageset\" />
+    <Folder Include="Assets.xcassets\Events.imageset\" />
+    <Folder Include="Assets.xcassets\info.imageset\" />
+    <Folder Include="Assets.xcassets\Contact.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="CustomEntry_iOS.cs" />
+    <Compile Include="CustomButton_iOS.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.2.5.0.91635\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.91635\build\netstandard1.0\Xamarin.Forms.targets')" />
+</Project>
